@@ -1,2 +1,3 @@
 # ZenGarden_project
-Duplicating an awesome looking site. http://www.csszengarden.com/218/
+Duplicating an awesome looking site.
+http://www.csszengarden.com/218/
