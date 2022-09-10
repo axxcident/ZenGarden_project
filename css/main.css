@@ -4,6 +4,7 @@
 /* Descriptions
 1. Root settings
 2. Header & navbar
+3. Main
 */
 
 /* 1. Root Settings */
@@ -27,11 +28,15 @@ body {
 }
 
 /* Kanske göra en klass i sig som vinklar boxar */
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .top-triangle {
   background-color: var(--TRredOrange);
   width: 300px;
   height: 300px;
-  left: 40%;
   top: -10em;
   position: absolute;
   transform: rotate(45deg);
@@ -57,6 +62,7 @@ body {
   justify-content: center;
 }
 
+/* space in between verkar inte göra nåt. knsk ta bort. */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -74,4 +80,60 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   color: var(--black);
+}
+
+/* lägg media query vid 1300 */
+/* main */
+.main-container {
+  width: 70%;
+  margin: 22vh auto auto auto;
+}
+
+.upper-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.finurlar {
+  display: flex;
+  justify-content: center;
+  margin: 0 20% 0 20%;
+}
+
+.finurlar img {
+  display: flex;
+  margin-bottom: -2.2em;
+  min-width: 1em;
+  height: 2em;
+}
+
+.main-container>section>h1 {
+  display: flex;
+  justify-content: center;
+  padding: .3em 0 1em 0;
+}
+
+
+
+/* .upper-section img {
+  display: flex;
+  width: 50%;
+  margin: 0 auto -2.6em;
+  min-height: 100%;
+  margin: 0 auto -2.6em;
+  width: auto;
+  height: auto;
+  max-height: 2.5em;
+  min-height: 1.5em;
+  max-width: 35vw;
+  min-width: 25vw;
+} */
+
+*/ .main-container h1:nth-child(2) {
+  font-size: 2em;
+}
+
+.main-container h1:nth-child(3) {
+  font-size: 6.5em;
 }
