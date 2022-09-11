@@ -4,7 +4,11 @@
 /* Descriptions
 1. Root settings
 2. Header & navbar
-3. Main
+3. Main Container
+4. Upper Section
+5. Middle Section
+6. Bottom Section
+7. Footer Container
 */
 
 /* 1. Root Settings */
@@ -27,7 +31,7 @@ body {
   font-family: Libre Bodoni;
 }
 
-/* Kanske göra en klass i sig som vinklar boxar */
+/* Kanske göra en klass i sig som vinklar boxar - knsk inte */
 header {
   display: flex;
   justify-content: center;
@@ -75,6 +79,7 @@ header {
   flex: 1;
 }
 
+/* Gör text röd vid hovring */
 .navbar a {
   text-decoration: none;
   font-weight: bold;
@@ -83,12 +88,15 @@ header {
 }
 
 /* lägg media query vid 1300 */
-/* main */
+/* Lägg till side borders på main */
+
+/* Main Container */
 .main-container {
   width: 70%;
   margin: 22vh auto auto auto;
 }
 
+/* Upper Section */
 .upper-section {
   display: flex;
   flex-direction: column;
@@ -108,13 +116,14 @@ header {
   height: 2em;
 }
 
+/* Pröva på att ändra från var jag ändrar h1 - typ upper-section*/
 .main-container>section>h1 {
   display: flex;
   justify-content: center;
   padding: .3em 0 1em 0;
 }
 
-*/ .main-container h1:nth-child(2) {
+.main-container h1:nth-child(2) {
   font-size: 2em;
 }
 
@@ -122,6 +131,7 @@ header {
   font-size: 6.5em;
 }
 
+/* Middle Section */
 .middle-section {
   background-image: url(/images/img-bottle.png);
   background-position: center center;
@@ -132,21 +142,27 @@ header {
   padding: 1em;
 }
 
+/* Bottom Section */
 .bottom-section {
-  margin: 1em 4.5em;
+  margin: 1em 4.5em 0;
   display: flex;
   flex-direction: column;
 }
 
 .h2-container {
-  padding-top: 1.5em;
+  padding-top: 2em;
+  margin-bottom: .6em;
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-section img,
-h2,
-p {
+.h2-container>h2 {
   display: flex;
-  width: 100%;
+  justify-content: center;
+}
+
+.h2-container>h2+h2>strong {
+  display: flex;
   justify-content: center;
 }
 
@@ -163,4 +179,30 @@ p {
   font-size: 1.4em;
   text-align: center;
   padding: 1em;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  margin: 1em 4.5em;
+  flex-direction: column;
+}
+
+.border-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* Gör text röd vid hovring */
+.border-container h2 {
+  font-size: 2em;
+}
+
+/* Gör hand rörlig vid hovring */
+.border-container img {
+  width: 12em;
+  height: 7em;
 }
