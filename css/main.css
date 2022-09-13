@@ -17,7 +17,7 @@
   --TRredOrange: #f7644d;
   --black: #272625;
   --BGbeige: #faf3e6;
-  --TRleorange: #ce8f3e;
+  --TRorange: #ce8f3e;
   --TRgreen: #a6baad;
 }
 
@@ -205,6 +205,8 @@ margin-right: 0.35em;
   flex-direction: column;
 }
 
+/* Lägg till text-align:center i media query */
+
 .border-container {
   display: flex;
   justify-content: space-around;
@@ -246,6 +248,7 @@ margin-right: 0.35em;
   padding-top: 4em;
   width: 20em;
   height: 35em;
+  z-index: 3;
 }
 
 .border-bottom {
@@ -254,7 +257,7 @@ margin-right: 0.35em;
 }
 
 .footer-border {
-  z-index: 1;
+  z-index: 3;
   display: flex;
   margin: auto;
   margin-top: .6em;
@@ -263,4 +266,37 @@ margin-right: 0.35em;
   background-image: url(/images/img-lg-horiz-border.png);
   background-repeat: repeat-x;
   margin-bottom: .6em;
+}
+
+.triangle-Guy-bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.yellow-triangle {
+  opacity: 1;
+  z-index: 2;
+  position: absolute;
+  bottom: -220%;
+  /* top: 120em; */
+
+  width: 0;
+  height: 0;
+  border-left: 25vw solid transparent;
+  border-right: 25vw solid transparent;
+  border-bottom: 30vw solid var(--TRorange);
+}
+
+.green-triangle {
+  opacity: 1;
+  z-index: 1;
+  position: absolute;
+  bottom: -220%;
+  left: 35%;
+  width: 0;
+  height: 0;
+  border-left: 25vw solid transparent;
+  border-right: 25vw solid transparent;
+  border-bottom: 30vw solid var(--TRgreen);
 }
