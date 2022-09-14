@@ -272,15 +272,14 @@ margin-right: 0.35em;
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .yellow-triangle {
   opacity: 1;
   z-index: 2;
   position: absolute;
-  bottom: -220%;
-  /* top: 120em; */
-
+  bottom: -7%;
   width: 0;
   height: 0;
   border-left: 25vw solid transparent;
@@ -292,7 +291,7 @@ margin-right: 0.35em;
   opacity: 1;
   z-index: 1;
   position: absolute;
-  bottom: -220%;
+  bottom: -7%;
   left: 35%;
   width: 0;
   height: 0;
