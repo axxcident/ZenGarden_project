@@ -41,8 +41,8 @@ header {
 
 .top-triangle {
   background-color: var(--TRredOrange);
-  width: 300px;
-  height: 300px;
+  width: 45vh;
+  height: 40vh;
   top: -10em;
   position: absolute;
   transform: rotate(45deg);
@@ -246,8 +246,8 @@ margin-right: 0.35em;
   display: flex;
   margin: auto;
   padding-top: 4em;
-  width: 20em;
-  height: 35em;
+  width: 30vw;
+  height: 105vh;
   z-index: 3;
 }
 
@@ -298,4 +298,103 @@ margin-right: 0.35em;
   border-left: 25vw solid transparent;
   border-right: 25vw solid transparent;
   border-bottom: 30vw solid var(--TRgreen);
+}
+
+
+@media screen and (max-width: 1300px) {
+  .border-container h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 2vw;
+  }
+
+  .border-container img {
+    width: 14vw;
+    height: 13vh;
+    margin: 0 2vw;
+  }
+
+  .border-container {
+    padding: 1.8em;
+  }
+
+  .borders {
+    height: 1.7vh;
+  }
+
+  .guy {
+    width: 30vw;
+    height: 85vh;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container h1:nth-child(2) {
+    font-size: 3.5vw;
+  }
+
+  .main-container h1:nth-child(3) {
+    font-size: 7vw;
+  }
+
+  .finurlar img {
+    width: 11vw;
+    height: 4vh;
+    margin-top: 6.5vh;
+  }
+
+  .bottom-section h2 {
+    font-size: 2em;
+  }
+
+  .border-container img {
+    width: 10vw;
+    height: 7vh;
+  }
+
+  .guy {
+    width: 25vw;
+    height: 70vh;
+  }
+
+  .main-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .top-triangle {
+    width: 30vw;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .guy {
+    width: 25vw;
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width:950px) {
+  .top-triangle {
+    width: 25vw;
+    height: 35vh;
+  }
+}
+
+@media screen and(max-width:500px) {
+  .top-triangle {
+    top: -10em;
+    left: 50vw;
+    height: 30vh;
+  }
+
+
+
 }
