@@ -25,6 +25,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,7 +33,6 @@ body {
   font-family: Libre Bodoni;
 }
 
-/* Kanske göra en klass i sig som vinklar boxar - knsk inte */
 /* 2. Header & navbar */
 header {
   display: flex;
@@ -60,22 +60,6 @@ header {
   background-repeat: repeat-x;
 }
 
-/* .right-border-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.border-right {
-  z-index: 1;
-  position: absolute;
-  /* top: 100px;
-  right: 100px;
-background-image: url(/images/img-lg-vert-border.png);
-background-repeat: repeat-y;
-width: 15px;
-height: 100vh;
-margin-right: 0.35em;
-}                         */
 
 .navbar {
   padding: 0.5em 2.5em;
@@ -83,7 +67,6 @@ margin-right: 0.35em;
   justify-content: center;
 }
 
-/* space in between verkar inte göra nåt. knsk ta bort. */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -104,12 +87,11 @@ margin-right: 0.35em;
   color: var(--black);
 }
 
-/* lägg media query vid 1300 */
 /* Lägg till side borders på main */
 
 /* Main Container */
 .main-container {
-  width: 70%;
+  width: 80%;
   margin: 22vh auto auto auto;
 }
 
@@ -117,35 +99,37 @@ margin-right: 0.35em;
 .upper-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
 }
 
 .finurlar {
   display: flex;
+  height: 14vh;
   justify-content: center;
-  margin: 0 20% 0 20%;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.finurlar h1 {
+  font-size: 6vw;
 }
 
 .finurlar img {
   display: flex;
-  margin-bottom: -2.2em;
-  min-width: 1em;
-  height: 2em;
+  margin-top: 3vh;
+  width: 15%;
+  height: 35%;
 }
 
-/* Pröva på att ändra från var jag ändrar h1 - typ upper-section*/
-.main-container>section>h1 {
+.upper-section h1:nth-child(3) {
+  font-size: 10vw;
   display: flex;
   justify-content: center;
-  padding: .3em 0 1em 0;
-}
-
-.main-container h1:nth-child(2) {
-  font-size: 2em;
-}
-
-.main-container h1:nth-child(3) {
-  font-size: 6.5em;
+  margin-top: 4vh;
+  font-weight: lighter;
+  text-align: center;
 }
 
 /* Middle Section */
@@ -204,8 +188,6 @@ margin-right: 0.35em;
   margin: 1em 4.5em;
   flex-direction: column;
 }
-
-/* Lägg till text-align:center i media query */
 
 .border-container {
   display: flex;
@@ -273,6 +255,8 @@ margin-right: 0.35em;
   display: flex;
   justify-content: center;
   position: relative;
+  overflow-y: hidden;
+  margin-bottom: -3.2vh;
 }
 
 .yellow-triangle {
@@ -330,19 +314,6 @@ margin-right: 0.35em;
 }
 
 @media screen and (max-width: 1200px) {
-  .main-container h1:nth-child(2) {
-    font-size: 3.5vw;
-  }
-
-  .main-container h1:nth-child(3) {
-    font-size: 7vw;
-  }
-
-  .finurlar img {
-    width: 11vw;
-    height: 4vh;
-    margin-top: 6.5vh;
-  }
 
   .bottom-section h2 {
     font-size: 2em;
@@ -375,10 +346,18 @@ margin-right: 0.35em;
     width: 90%;
   }
 
+  .finurlar img {
+    width: 20%;
+    height: 40%;
+    margin-top: 2vh;
+  }
+
   .guy {
     width: 25vw;
     height: 60vh;
   }
+
+
 }
 
 @media screen and (max-width:950px) {
@@ -388,10 +367,118 @@ margin-right: 0.35em;
   }
 }
 
-@media screen and (max-width:500px) {
-  .top-triangle {
-    top: -10em;
-    left: 50vw;
-    height: 30vh;
+@media screen and (max-width:700px) {
+  .finurlar img {
+    height: 27%;
   }
+
 }
+
+@media screen and (max-width:650px) {
+  .guy {
+    height: 45vh;
+  }
+
+  .main-container {
+    width: 100vw;
+  }
+
+  .bottom-section {
+    margin: 1em 2em 0;
+  }
+
+  .footer-container {
+    margin: 1em 2em 0;
+  }
+
+  .border-container img {
+    width: 15vw;
+  }
+
+  .border-container h2 {
+    margin: 0;
+    font-size: 1.4;
+  }
+
+  .border-container img {
+    margin: 0;
+  }
+
+  .finurlar img {
+    width: 15%;
+    height: 24%;
+    margin-top: 1.5vh;
+  }
+
+  .top-triangle {
+    width: 39vw;
+    height: 33vh;
+    left: 30vw;
+
+  }
+
+  @media screen and (max-width:500px) {
+    .top-triangle {
+      top: -10em;
+      left: 30vw;
+      height: 33vh;
+    }
+
+    .bottom-section h2 {
+      font-size: 1.5em;
+    }
+
+    .finurlar img {
+      height: 20%;
+      margin-top: 1.2vh;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .guy {
+      height: 30vh;
+    }
+
+    .main-container {
+      margin-top: -6vh;
+    }
+
+    .bottom-section h2 {
+      font-size: 1em;
+    }
+
+    .bottom-section p {
+      font-size: 1.2em;
+    }
+
+    .footer-nav ul {
+      margin-bottom: 0;
+      justify-content: space-between;
+    }
+
+    .footer-nav a {
+      font-size: 1.2em;
+    }
+
+    .triangle-Guy-bottom-container {
+      overflow-y: hidden;
+    }
+
+    .border-container img {
+      width: 40vw;
+    }
+
+    .finurlar img {
+      width: 12%;
+      height: 11%;
+      margin-top: 1vh;
+    }
+
+    .top-triangle {
+      width: 39vw;
+      height: 33vh;
+      left: 42vw;
+
+    }
+
+  }
