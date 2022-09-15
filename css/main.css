@@ -79,12 +79,15 @@ header {
   flex: 1;
 }
 
-/* Gör text röd vid hovring */
 .navbar a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.3rem;
   color: var(--black);
+}
+
+.navbar a:hover {
+  color: var(--TRredOrange);
 }
 
 /* Lägg till side borders på main */
@@ -208,6 +211,10 @@ header {
   height: 7em;
 }
 
+/* .border-container img:hover {
+  color: var(--TRredOrange);
+} */
+
 .footer-nav ul {
   list-style: none;
   display: flex;
@@ -216,12 +223,15 @@ header {
   margin-bottom: .5em;
 }
 
-/* Gör text röd vid hovring */
 .footer-nav a {
   font-family: Antonio;
   font-size: 1.5em;
   text-decoration: none;
   color: var(--black);
+}
+
+.footer-nav a:hover {
+  color: var(--TRredOrange);
 }
 
 .guy {
@@ -371,7 +381,12 @@ header {
   .finurlar img {
     height: 27%;
   }
+}
 
+@media screen and (max-width:850px) {
+  .guy {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width:650px) {
