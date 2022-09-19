@@ -60,7 +60,7 @@ header {
   margin-top: .6em;
   width: 99%;
   height: 15px;
-  background-image: url("/img-lg-horiz-border.png");
+  background-image: url("img-lg-horiz-border.png");
   background-repeat: repeat-x;
 }
 
@@ -308,7 +308,7 @@ HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
   margin-top: .6em;
   width: 99%;
   height: 15px;
-  background-image: url("/img-lg-horiz-border.png");
+  background-image: url("img-lg-horiz-border.png");
   background-repeat: repeat-x;
   margin-bottom: .6em;
 }
