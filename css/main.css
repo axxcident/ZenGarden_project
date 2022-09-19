@@ -5,11 +5,14 @@
 /* Descriptions
 1. Root settings
 2. Header & navbar
-3. Main Container
-4. Upper Section
-5. Middle Section
-6. Bottom Section
-7. Footer Container
+3. mobile-navbar & burgermeny
+4. Main Container
+5. Upper Section
+6. Middle Section
+7. Bottom Section
+8. Footer Container
+9. Triangle Guy bottom container
+10. Media Queries
 */
 
 /* 1. Root Settings */
@@ -50,6 +53,47 @@ header {
   right: 42vw;
 }
 
+.top-border {
+  z-index: 1;
+  display: flex;
+  margin: auto;
+  margin-top: .6em;
+  width: 99%;
+  height: 15px;
+  background-image: url(/images/img-lg-horiz-border.png);
+  background-repeat: repeat-x;
+}
+
+.navbar {
+  padding: 0.5em 2.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 3rem;
+}
+
+.space {
+  flex: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--black);
+}
+
+.navbar a:hover {
+  color: var(--TRredOrange);
+}
+
+/* 3. mobile-navbar & burgermeny */
 .burgermeny {
   cursor: pointer;
   display: none;
@@ -66,37 +110,6 @@ header {
   height: .5vh;
   width: clamp(5vw, 2em + 1vw, 10vw);
   background-color: var(--black);
-}
-
-/* .relativcontainer {
-  position: relative;
-  height: 27vh;
-}
-
-.topTriangeln {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-right: 17vw solid transparent;
-  border-left: 17vw solid transparent;
-  border-top: 17vw solid var(--TRredOrange);
-} */
-
-.top-border {
-  z-index: 1;
-  display: flex;
-  margin: auto;
-  margin-top: .6em;
-  width: 99%;
-  height: 15px;
-  background-image: url(/images/img-lg-horiz-border.png);
-  background-repeat: repeat-x;
-}
-
-.navbar {
-  padding: 0.5em 2.5em;
-  display: flex;
-  justify-content: center;
 }
 
 #mobile-navbar {
@@ -133,38 +146,16 @@ header {
   z-index: 4;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  gap: 3rem;
-}
+/* Lägg till side borders på main
+HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
 
-.space {
-  flex: 1;
-}
-
-.navbar a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.3rem;
-  color: var(--black);
-}
-
-.navbar a:hover {
-  color: var(--TRredOrange);
-}
-
-/* Lägg till side borders på main */
-
-/* Main Container */
+/* 4. Main Container */
 .main-container {
   width: 80%;
   margin: 22vh auto auto auto;
 }
 
-/* Upper Section */
+/* 5. Upper Section */
 .upper-section {
   display: flex;
   flex-direction: column;
@@ -201,7 +192,7 @@ header {
   text-align: center;
 }
 
-/* Middle Section */
+/* 6. Middle Section */
 .middle-section {
   background-image: url(/images/img-bottle.png);
   background-position: center center;
@@ -212,7 +203,7 @@ header {
   padding: 1em;
 }
 
-/* Bottom Section */
+/* 7. Bottom Section */
 .bottom-section {
   margin: 1em 4.5em 0;
   display: flex;
@@ -251,7 +242,7 @@ header {
   padding: 1em;
 }
 
-/* Footer Container */
+/* 8. Footer Container */
 .footer-container {
   display: flex;
   margin: 1em 4.5em;
@@ -276,10 +267,6 @@ header {
   width: 12em;
   height: 7em;
 }
-
-/* .border-container img:hover {
-  color: var(--TRredOrange);
-} */
 
 .footer-nav ul {
   list-style: none;
@@ -326,6 +313,7 @@ header {
   margin-bottom: .6em;
 }
 
+/* 9. Triangle Guy bottom container */
 .triangle-Guy-bottom-container {
   width: 100%;
   display: flex;
@@ -361,6 +349,7 @@ header {
 }
 
 
+/* 10. Media Queries */
 @media screen and (max-width: 1300px) {
   .border-container h2 {
     font-size: 1.5em;
@@ -473,10 +462,6 @@ header {
   .navbar {
     display: none;
   }
-
-  /* #mobile-navbar {
-    display: flex;
-  } */
 
 }
 
