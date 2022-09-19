@@ -6,22 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="images/zen_trans_back.svg">
+  <link rel="icon" type="image/svg" href="images/zen_trans_back.svg">
   <title>Acke's ZenGarden</title>
 </head>
 
 <body>
-  <header>
-    <div class="top-triangle"></div>
-    <div class="top-border"></div>
-  </header>
+  <div id="darkbod">
+
+    <header>
+      <div class="top-triangle"></div>
+      <div class="top-border"></div>
+      <button class="burgermeny" type="button" id="btn">
+        <div class="streck"></div>
+        <div class="streck"></div>
+        <div class="streck"></div>
+      </button>
+    </header>
 
 
-  <!-- <div class="relativcontainer">
+    <!-- <div class="relativcontainer">
     <div class="topTriangeln"></div>
   </div> -->
 
-  <!--
+    <!--
     Klass för sido-ramar. Funkat ej hittils.
 
   <div class="right-border-container">
@@ -29,80 +36,111 @@
   </div>
   -->
 
-  <nav class="navbar" id="hide-navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About us</a></li>
-      <li class="space"><a href="#"></a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">References</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li class="space"><a href="#"></a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">References</a></li>
+      </ul>
+    </nav>
 
-  <main class="main-container">
+    <nav id="mobile-navbar">
+      <ul>
+        <li><a href="#" id="exit">Home</a></li>
+        <li><a href="#" id="exit">About us</a></li>
+        <li><a href="#" id="exit">Contact</a></li>
+        <li><a href="#" id="exit">References</a></li>
+      </ul>
+    </nav>
 
-    <section class="upper-section">
-      <div class="finurlar">
-        <img src="images/left-finurl.png" alt="curvy left brackets" width="204" height="42">
-        <h1>DR. ACKMAN'S</h1>
-        <img src="images/right-finurl.png" alt="curvy right brackets" width="181" height="42">
-      </div>
-      <div class="space"></div>
-      <h1>CSS Zen Garden</h1>
-    </section>
+    <main class="main-container">
 
-    <section class="middle-section">
-    </section>
+      <section class="upper-section">
+        <div class="finurlar">
+          <img src="images/left-finurl.png" alt="curvy left brackets" width="204" height="42">
+          <h1>DR. ACKMAN'S</h1>
+          <img src="images/right-finurl.png" alt="curvy right brackets" width="181" height="42">
+        </div>
+        <div class="space"></div>
+        <h1>CSS Zen Garden</h1>
+      </section>
 
-    <section class="bottom-section">
-      <img class="borders" src="images/img-lg-horiz-border.png" alt="border">
-      <div class="h2-container">
-        <h2>The Road To</h2>
-        <h2><strong>Enlightenment</strong></h2>
-      </div>
-      <img class="borders" src="images/img-lg-horiz-border.png" alt="border">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatum dolores! Dolor rerum atque
-        distinctio cum perspiciatis. Odio, laborum aliquam eos hic possimus ratione aspernatur tenetur tempora est
-        veritatis saepe fugit ipsum harum provident! Labore!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatum dolores! Dolor rerum atque
-        distinctio cum perspiciatis. Odio, laborum aliquam eos hic possimus ratione aspernatur tenetur tempora est
-        veritatis saepe fugit ipsum harum provident! Labore!
-      </p>
-    </section>
+      <section class="middle-section">
+      </section>
 
-    <footer>
-      <div class="footer-container">
+      <section class="bottom-section">
         <img class="borders" src="images/img-lg-horiz-border.png" alt="border">
-        <div class="border-container">
-          <h2>Would you like to know more?</h2>
-          <img src="images/pointer-right.png" alt="pointer hand">
+        <div class="h2-container">
+          <h2>The Road To</h2>
+          <h2><strong>Enlightenment</strong></h2>
         </div>
         <img class="borders" src="images/img-lg-horiz-border.png" alt="border">
-        <div class="footer-nav">
-          <ul>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Work for us</a></li>
-          </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatum dolores! Dolor rerum atque
+          distinctio cum perspiciatis. Odio, laborum aliquam eos hic possimus ratione aspernatur tenetur tempora est
+          veritatis saepe fugit ipsum harum provident! Labore!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatum dolores! Dolor rerum atque
+          distinctio cum perspiciatis. Odio, laborum aliquam eos hic possimus ratione aspernatur tenetur tempora est
+          veritatis saepe fugit ipsum harum provident! Labore!
+        </p>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <img class="borders" src="images/img-lg-horiz-border.png" alt="border">
+          <div class="border-container">
+            <h2>Would you like to know more?</h2>
+            <img src="images/pointer-right.png" alt="pointer hand">
+          </div>
+          <img class="borders" src="images/img-lg-horiz-border.png" alt="border">
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Work for us</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
-  </main>
+      </footer>
+    </main>
 
-  <div class="triangle-Guy-bottom-container">
-    <img class="guy" src="images/img-pointer-guy.png" alt="guy who points left">
-    <div class="yellow-triangle"></div>
-    <div class="green-triangle"></div>
-  </div>
+    <div class="triangle-Guy-bottom-container">
+      <img class="guy" src="images/img-pointer-guy.png" alt="guy who points left">
+      <div class="yellow-triangle"></div>
+      <div class="green-triangle"></div>
+    </div>
 
-  <div class="border-bottom">
-    <div class="footer-border"></div>
+    <div class="border-bottom">
+      <div class="footer-border"></div>
+    </div>
+
   </div>
 
 </body>
+
+
+<script>
+
+  let mobileBTN = document.getElementById('btn');
+  let mobileNavbar = document.getElementById('mobile-navbar');
+  let darkback = document.getElementById('darkbod');
+  let exitBTN = document.getElementById('exit');
+
+  mobileBTN.addEventListener('click', () => {
+    mobileNavbar.style.display = "flex";
+    darkback.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  })
+
+  exitBTN.addEventListener('click', () => {
+    mobileNavbar.style.display = "none";
+    darkback.style.backgroundColor = "rgba(0, 0, 0, 0)";
+  })
+
+</script>
 
 </html>
