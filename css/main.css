@@ -60,7 +60,7 @@ header {
   margin-top: .6em;
   width: 99%;
   height: 15px;
-  background-image: url("images/img-lg-horiz-border.jpg");
+  background-image: url('img-lg-horiz-border.jpg');
   background-repeat: repeat-x;
 }
 
@@ -195,7 +195,7 @@ HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
 
 /* 6. Middle Section */
 .middle-section {
-  background-image: url(/images/img-bottle.png);
+  background-image: url(img-bottle.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -309,7 +309,7 @@ HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
   margin-top: .6em;
   width: 99%;
   height: 15px;
-  background-image: url("images/img-lg-horiz-border.jpg");
+  background-image: url('img-lg-horiz-border.jpg');
   background-repeat: repeat-x;
   margin-bottom: .6em;
 }
@@ -406,13 +406,13 @@ HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
   }
 }
 
-@media screen and (max-width:1300) {
+@media screen and (max-width:1300px) {
   .top-triangle {
     right: 33vw;
   }
 }
 
-@media screen and (max-width:1200) {
+@media screen and (max-width:1200px) {
   .top-triangle {
     right: 32vw;
   }
@@ -495,7 +495,7 @@ HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
 
   .border-container h2 {
     margin: 0;
-    font-size: 1.4;
+    font-size: 1.4em;
   }
 
   .border-container img {
