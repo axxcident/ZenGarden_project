@@ -62,6 +62,7 @@ header {
   height: 15px;
   background-image: url('img-lg-horiz-border.jpg');
   background-repeat: repeat-x;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .navbar {
