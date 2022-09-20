@@ -313,6 +313,7 @@ HAR INTE HUNNIT/KLARAT ATT GÖRA KLART DENNA.*/
   background-image: url('img-lg-horiz-border.jpg');
   background-repeat: repeat-x;
   margin-bottom: .6em;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 /* 9. Triangle Guy bottom container */
