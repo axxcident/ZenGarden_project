@@ -106,6 +106,7 @@ header {
 }
 
 .streck {
+  display: block;
   margin: .5vh 1vw;
   height: .5vh;
   width: clamp(5vw, 2em + 1vw, 10vw);
