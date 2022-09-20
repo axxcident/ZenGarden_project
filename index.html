@@ -49,9 +49,9 @@
     <nav id="mobile-navbar">
       <ul>
         <li><a href="#" id="exit">Home</a></li>
-        <li><a href="#" id="exit">About us</a></li>
-        <li><a href="#" id="exit">Contact</a></li>
-        <li><a href="#" id="exit">References</a></li>
+        <li><a href="#" class="exit">About us</a></li>
+        <li><a href="#" class="exit">Contact</a></li>
+        <li><a href="#" class="exit">References</a></li>
       </ul>
     </nav>
 
@@ -121,26 +121,31 @@
 
   </div>
 
+  <script>
+    let mobileBTN = document.getElementById('btn');
+    let mobileNavbar = document.getElementById('mobile-navbar');
+    let darkback = document.getElementById('darkbod');
+
+    let exitBTN = document.getElementById('exit');
+    let exitBTNs = document.getElementsByClassName('exit');
+
+    mobileBTN.addEventListener('click', () => {
+      mobileNavbar.style.display = "flex";
+      darkback.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    })
+
+    exitBTN.addEventListener('click', () => {
+      mobileNavbar.style.display = "none";
+      darkback.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    })
+
+    // funkar ej
+    exitBTNs.addEventListener('click', () => {
+      mobileNavbar.style.display = "none";
+      darkback.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    })
+  </script>
+
 </body>
-
-
-<script>
-
-  let mobileBTN = document.getElementById('btn');
-  let mobileNavbar = document.getElementById('mobile-navbar');
-  let darkback = document.getElementById('darkbod');
-  let exitBTN = document.getElementById('exit');
-
-  mobileBTN.addEventListener('click', () => {
-    mobileNavbar.style.display = "flex";
-    darkback.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-  })
-
-  exitBTN.addEventListener('click', () => {
-    mobileNavbar.style.display = "none";
-    darkback.style.backgroundColor = "rgba(0, 0, 0, 0)";
-  })
-
-</script>
 
 </html>
